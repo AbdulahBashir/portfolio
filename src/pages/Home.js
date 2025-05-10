@@ -14,19 +14,19 @@ const Home = () => {
             Hi There,<br />
             I'm <TypeWriterName />
           </h1>
-          <p className="text-3xl font-medium text-gray-700">
-            I Am Into <span className="text-yellow-600">Web Development</span>
+          <p className="text-3xl font-medium text-gray-500">
+            I Am Into <span className="text-yellow-400">Web Development</span>
           </p>
 
           <Link
-            to="/about"
-            className="inline-block bg-black border border-yellow-500 text-yellow-700 font-extrabold px-6 py-2 rounded-full shadow-md hover:bg-yellow-500 hover:text-black hover:shadow-lg transition"
+            to="/contact"
+            className="inline-block bg-black border border-yellow-400 text-yellow-400 font-extrabold px-6 py-2 rounded-full shadow-md hover:bg-yellow-400 hover:text-black hover:shadow-lg transition"
           >
             Hire Me →
           </Link>
           <Link
             to="/skills"
-            className="inline-block mx-3 bg-black border border-yellow-500 text-yellow-700 font-extrabold px-6 py-2 rounded-full shadow-md hover:bg-yellow-500 hover:text-black hover:shadow-lg transition"
+            className="inline-block mx-3 bg-black border border-yellow-400 text-yellow-400 font-extrabold px-6 py-2 rounded-full shadow-md hover:bg-yellow-400 hover:text-black hover:shadow-lg transition"
           >
             Skills →
           </Link>
