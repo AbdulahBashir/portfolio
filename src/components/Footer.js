@@ -14,13 +14,13 @@ const Footer = () => {
         
 
         <div className="flex gap-5">
-          <Link to="https://github.com/" target="_blank" className="hover:text-slate-400 transition">
+          <Link to="https://github.com/AbdulahBashir" target="_blank" className="hover:text-slate-400 transition">
             <Github />
           </Link>
-          <Link to="https://linkedin.com/" target="_blank" className="hover:text-blue-700 transition">
+          <Link to="https://www.linkedin.com/in/abdullah-bashir-36750a365?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFFU9NiIASOyHPX2BZe1MTA%3D%3D" target="_blank" className="hover:text-blue-700 transition">
             <Linkedin />
           </Link>
-          <Link to="mailto:someone@example.com" className="hover:text-pink-400 transition">
+          <Link to="mailto:muhammadabdullahbashir83@gmail.com" className="hover:text-pink-400 transition">
             <Mail />
           </Link>
         </div>
