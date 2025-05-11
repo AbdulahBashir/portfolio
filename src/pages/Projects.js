@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import factflow1 from "../factflow1.jpg";
 import factflow2 from "../factflow2.jpg";
 import aura1 from "../aura1.jpeg";
@@ -13,31 +12,53 @@ const projects = [
   {
     title: "NoteHive",
     description: "A full-stack notes manager app with secure login and responsive UI using MERN stack.",
-    tech: ["React", "Node.js", "MongoDB"],
-    images: [notehive1, notehive2],
-  },
-  {
-    title: "NoteHive",
-    description: "A full-stack notes manager app with secure login and responsive UI using MERN stack.",
-    tech: ["React", "Node.js", "MongoDB"],
+    benefits: [
+      " 🔐 Secure user authentication with password hashing (bcrypt + salt)",
+      " 🗂️ Full CRUD operations for creating, reading, updating, and deleting notes",
+      " ☁️ Cloud-stored notes accessible from any device via login",
+      " 🧠 Clean and intuitive user interface for smooth experience",
+      " 🛠️ Built with MERN stack: MongoDB, Express, React, and Node.js"
+    ],
+    tech: ["React", "Node.js", "MongoDB", "Tailwind"],
     images: [notehive1, notehive2],
   },
   {
     title: "TextUtils",
     description: "A collaborative task management tool with real-time updates.",
-    tech: ["React", "Tailwind"],
+    benefits: [
+      "🔠 Convert text to Uppercase / Lowercase, remove extra spaces, and clear text",
+      "📧 Email extractor and smart email word filter to manage sensitive info",
+      "🧮 Instant word and character count, plus live text preview section",
+      "🌓 Support for Dark/Light mode to reduce eye strain",
+      "🔍 Functional search bar in navbar and an informative About Us page"
+    ],
+    tech: ["React", "Tailwind", "Node.js"],
     images: [text1, text2],
   },
   {
     title: "Aura by AZ",
     description: "E-commerce frontend with product filtering and cart functionality.",
-    tech: ["React", "Tailwind"],
+    benefits: [
+      "🧴 Separate product categories for Men’s and Women’s perfumes",
+      "🛒 Fully functional Add to Cart feature for easy shopping experience",
+      "🌓 Built-in Dark/Light mode toggle for personalized viewing",
+      "📝 Dedicated blog section with daily content updates",
+      "🧭 Responsive layout with structured header and footer navigation"
+    ],
+    tech: ["React", "Tailwind", "Node.js"],
     images: [aura1, aura2],
   },
   {
     title: "FactFlow",
     description: "A dynamic news website with real-time content updates, responsive layout, and modern UI using React.",
-    tech: ["React", "Node.js"],
+    benefits: [
+      "⚡ Real-time news updates fetched daily via API integration",
+      "🌀 Infinite scroll with smooth user experience for continuous browsing",
+      "📊 Category-based filtering (Sports, Science, Entertainment, General, etc.)",
+      "🔼 Top loading bar and bottom spinner to indicate content loading",
+      "🕒 Each article includes publish date, time, and a “Read More” call-to-action"
+    ],
+    tech: ["React", "Node.js", "BootStrap"],
     images: [factflow1, factflow2],
   },
 ];
@@ -87,13 +108,20 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-yellow-600 mb-2">{project.title}</h3>
                 <p className="text-sm mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
                     <span key={i} className="bg-yellow-500 text-black text-xs px-2 py-1 rounded-full font-medium">
                       {tech}
                     </span>
                   ))}
                 </div>
+
+                <h4 className="text-yellow-400 font-semibold mb-2">Benefits:</h4>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  {project.benefits.map((benefit, i) => (
+                    <li key={i}>{benefit}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
