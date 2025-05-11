@@ -15,7 +15,7 @@ const Home = () => {
             I'm <TypeWriterName />
           </h1>
           <p className="text-3xl font-medium text-gray-500">
-            I Am Into <span className="text-yellow-400">Web Development</span>
+            A <span className="text-yellow-400">Web Developer</span> Building Modern Websites.
           </p>
 
           <Link

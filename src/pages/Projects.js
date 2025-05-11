@@ -17,6 +17,12 @@ const projects = [
     images: [notehive1, notehive2],
   },
   {
+    title: "NoteHive",
+    description: "A full-stack notes manager app with secure login and responsive UI using MERN stack.",
+    tech: ["React", "Node.js", "MongoDB"],
+    images: [notehive1, notehive2],
+  },
+  {
     title: "TextUtils",
     description: "A collaborative task management tool with real-time updates.",
     tech: ["React", "Tailwind"],
